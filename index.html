@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Audio samples from "DidiSpeech: A Large Scale Mandarin Speech Corpus"</title>
+    <link rel="stylesheet" type="text/css" href="../../stylesheet.css"/>
+    <link rel="shortcut icon" href="../../images/taco.png">
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Audio samples from "DidiSpeech: A Large Scale Mandarin Speech Corpus"</h1>
+      </header>
+    </article>
+
+    <div><b>Authors:</b> Tingwei Guo, Cheng Wen, DongWei Jiang, Ne Luo, RuiXiong Zhang, ShuaiJiang Zhao, WuBo Li, Cheng Gong, Wei Zou, Kun Han, XianGang Li</div>
+    <div><b>Abstract:</b> This paper introduces a new open-sourced Mandarin speech corpus, called DidiSpeech. It consists of about 800 hours of speech data at 48kHz sampling rate from 6000 speakers and the corresponding texts. All speech data in the corpus was recorded in quiet environment and is suitable for various speech processing tasks, such as voice conversion, multi-speaker text-to-speech and aucomatic speech recognation. We conduct experiments with multiple speech tasks and evaluate the performance, showing that it is promising to use the corpus for both academic research and practical application. The corpus is available at www.didichuxing.com.
+    </div>
+
+    <h2>Multi-speaker TTS</h2>
+    <blockquote>
+      <table>
+        <tr><td colspan=2><span>1. 建议北京也搞一个哟！</span></td></tr>
+        <tr>
+          <td align=center width=200>Speaker 1</td><td align=center width=200>Speaker 2</td>
+        </tr>
+        <tr>
+          <td><audio controls><source src="samples/vocoder/f0/000324.wav"></audio></td>
+          <td><audio controls><source src="samples/vocoder/f1/000324.wav"></audio></td>
+        </tr>
+        <tr height="15px"></tr>
+        <tr><td colspan=2><span>2. 秋保的脚部等处也负有轻伤。</span></td></tr>
+        <tr>
+          <td align=center width=200>Speaker 1</td><td align=center width=200>Speaker 2</td>
+        </tr>
+        <tr>
+          <td><audio controls><source src="samples/vocoder/f0/000679.wav"></audio></td>
+          <td><audio controls><source src="samples/vocoder/f1/000679.wav"></audio></td>
+        </tr>
+      </table>
+    </blockquote>
+
+    <h2>Voice conversion</h2>
+    <blockquote>
+      <table>
+        <tr>
+          <td align=center width=200>source audio</td><td align=center width=200>target audio</td><td align=center width=200>converted audio</td>
+        </tr>
+        <tr>
+          <td><audio controls><source src="samples/vocoder/f0/000324.wav"></audio></td>
+          <td><audio controls><source src="samples/vocoder/f1/000324.wav"></audio></td>
+          <td><audio controls><source src="samples/vocoder/f1/000324.wav"></audio></td>
+        </tr>
+        <tr height="15px"></tr>
+        <tr>
+          <td align=center width=200>source audio</td><td align=center width=200>target audio</td><td align=center width=200>converted audio</td>
+        </tr>
+        <tr>
+          <td><audio controls><source src="samples/vocoder/f0/000679.wav"></audio></td>
+          <td><audio controls><source src="samples/vocoder/f1/000679.wav"></audio></td>
+          <td><audio controls><source src="samples/vocoder/f1/000679.wav"></audio></td>
+        </tr>
+      </table>
+    </blockquote>
+
+  </body>
+</html>
