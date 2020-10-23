@@ -13,39 +13,42 @@
     </article>
     <div><b>Paper: </b><a href="https://arxiv.org/abs/2010.09275">arXiv</a></div>
     <div><b>Authors:</b> Tingwei Guo, Cheng Wen, DongWei Jiang, Ne Luo, RuiXiong Zhang, ShuaiJiang Zhao, WuBo Li, Cheng Gong, Wei Zou, Kun Han, XianGang Li</div>
-    <div><b>Abstract:</b> This paper introduces a new open-sourced Mandarin speech corpus, called DiDiSpeech. It consists of about 800 hours of speech data at 48kHz sampling rate from 6000 speakers and the corresponding texts. All speech data in the corpus was recorded in quiet environment and is suitable for various speech processing tasks, such as voice conversion, multi-speaker text-to-speech and aucomatic speech recognation. We conduct experiments with multiple speech tasks and evaluate the performance, showing that it is promising to use the corpus for both academic research and practical application. The corpus is available at https://outreach.didichuxing.com/research/opendata/en/.
+    <div><b>Abstract:</b> This paper introduces a new open-sourced Mandarin speech corpus, called DiDiSpeech. It consists of about 800 hours of speech data at 48kHz sampling rate from 6000 speakers and the corresponding texts. All speech data in the corpus was recorded in quiet environment and is suitable for various speech processing tasks, such as voice conversion, multi-speaker text-to-speech and aucomatic speech recognation. We conduct experiments with multiple speech tasks and evaluate the performance, showing that it is promising to use the corpus for both academic research and practical application. The corpus is available at https://outreach.didichuxing.com/research/opendata/.<br/><br/>
     </div>
+    <div> For more information, refer to the paper "DiDiSpeech: A Large Scale Mandarin Speech Corpus", Tingwei Guo, Cheng Wen, Dongwei Jiang, Ne Luo, Ruixiong Zhang, Shuaijiang Zhao, Wubo Li, Cheng Gong, Wei Zou, Kun Han, Xiangang Li, arXiv:2010.09275, 2020. If you use the DiDiSpeech corpus in your work, please cite this paper where it was introduced.</div>
 
     <h2>Multi-speaker TTS</h2>
     <h3>1、Seen Speakers</h3>
     <blockquote>
       <table>
-        <tr><td colspan=2><span>Speaker 1</span></td></tr>
         <tr>
-          <td align=center width=200>Reference</td><td align=center width=200>Synthesized audio 1</td><td align=center width=200>Synthesized audio 2</td>
+         <td align=center width=200></td><td align=center width=200>Speaker 1</td><td align=center width=200>Speaker 2</td><td align=center width=200>Speaker 3</td><td align=center width=200>Speaker 4</td><td align=center width=200>Speaker 5</td>
         </tr>
+        <tr height="10px"></tr>
         <tr>
+          <td align=center width=200>Reference</td>
           <td><audio controls><source src="multi_speaker_tts/seen_speakers/00112025-ori.wav"></audio></td>
-          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00112025-syn_1.wav"></audio></td>
-          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00112025-syn_2.wav"></audio></td>
-        </tr>
-        <tr height="15px"></tr>
-        <tr><td colspan=2><span>Speaker 2</span></td></tr>
-        <tr>
-          <td align=center width=200>Reference</td><td align=center width=200>Synthesized audio 1</td><td align=center width=200>Synthesized audio 2</td>
-        </tr>
-        <tr>
-          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004745-ori.wav"></audio></td>
-          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004745-syn_1.wav"></audio></td>
-          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004745-syn_2.wav"></audio></td>
-        </tr>
-        <tr><td colspan=2><span>Speaker 3</span></td></tr>
-        <tr>
-          <td align=center width=200>Reference</td><td align=center width=200>Synthesized audio 1</td><td align=center width=200>Synthesized audio 2</td>
-        </tr>
-        <tr>
+          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004573-ori.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004552-ori.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004519-ori.wav"></audio></td>
           <td><audio controls><source src="multi_speaker_tts/seen_speakers/10004126-ori.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=200>Synthesized audio 1</td>
+          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00112025-syn_1.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004573-syn_1.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004552-syn_1.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004519-syn_1.wav"></audio></td>
           <td><audio controls><source src="multi_speaker_tts/seen_speakers/10004126-syn_1.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=200>Synthesized audio 2</td>
+          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00112025-syn_2.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004573-syn_2.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004552-syn_2.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/seen_speakers/00004519-syn_2.wav"></audio></td>
           <td><audio controls><source src="multi_speaker_tts/seen_speakers/10004126-syn_2.wav"></audio></td>
         </tr>
       </table>
@@ -53,59 +56,94 @@
     <h3>2、Unseen Speakers</h3>
     <blockquote>
       <table>
-        <tr><td colspan=2><span>Speaker 1</span></td></tr>
         <tr>
-          <td align=center width=200>Reference</td><td align=center width=200>Synthesized audio 1</td><td align=center width=200>Synthesized audio 2</td>
+          <td align=center width=100> </td><td align=center width=200>Speaker 1</td><td align=center width=200>Speaker 2</td><td align=center width=200>Speaker 3</td><td align=center width=200>Speaker 4</td><td align=center width=200>Speaker 5</td>
         </tr>
+        <tr height="10px"></tr>
         <tr>
+          <td align=center width=300>Reference</td>
           <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00005186-ori.wav"></audio></td>
-          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00005186-syn_1.wav"></audio></td>
-          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00005186-syn_2.wav"></audio></td>
-        </tr>
-        <tr height="15px"></tr>
-        <tr><td colspan=2><span>Speaker 2</span></td></tr>
-        <tr>
-          <td align=center width=200>Reference</td><td align=center width=200>Synthesized audio 1</td><td align=center width=200>Synthesized audio 2</td>
-        </tr>
-        <tr>
+          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00012581-ori.wav"></audio></td>
           <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00117201-ori.wav"></audio></td>
-          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00117201-syn_1.wav"></audio></td>
-          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00117201-syn_2.wav"></audio></td>
-        </tr>
-        <tr><td colspan=2><span>Speaker 3</span></td></tr>
-        <tr>
-          <td align=center width=200>Reference</td><td align=center width=200>Synthesized audio 1</td><td align=center width=200>Synthesized audio 2</td>
-        </tr>
-        <tr>
+          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00006063-ori.wav"></audio></td>
           <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00006002-ori.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300>Synthesized audio 1</td>
+          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00005186-syn_1.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00012581-syn_1.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00117201-syn_1.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00006063-syn_1.wav"></audio></td>
           <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00006002-syn_1.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300>Synthesized audio 2</td>
+          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00005186-syn_2.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00012581-syn_2.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00117201-syn_2.wav"></audio></td>
+          <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00006063-syn_2.wav"></audio></td>
           <td><audio controls><source src="multi_speaker_tts/unseen_speakers/00006002-syn_2.wav"></audio></td>
         </tr>
       </table>
     </blockquote>
-    <!--
     <h2>Voice conversion</h2>
+    <h3>1、Parallel VC</h3>
     <blockquote>
       <table>
         <tr>
-          <td align=center width=200>source audio</td><td align=center width=200>target audio</td><td align=center width=200>converted audio</td>
+          <td align=center width=200></td><td align=center width=200>source audio</td><td align=center width=200>target audio</td><td align=center width=200>converted audio</td>
         </tr>
         <tr>
-          <td><audio controls><source src="voice_conversion/demo.wav"></audio></td>
-          <td><audio controls><source src="voice_conversion/demo.wav"></audio></td>
-          <td><audio controls><source src="voice_conversion/demo.wav"></audio></td>
+          <td style="white-space:nowrap" align=center width=300>Speaker 1</td>
+          <td><audio controls><source src="voice_conversion/parallel_vc/source_6.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/parallel_vc/target_6.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/parallel_vc/convert_6.wav"></audio></td>
         </tr>
-        <tr height="15px"></tr>
+        <tr height="10px"></tr>
         <tr>
-          <td align=center width=200>source audio</td><td align=center width=200>target audio</td><td align=center width=200>converted audio</td>
+          <td style="white-space:nowrap" align=center width=300>Speaker 2</td>
+          <td><audio controls><source src="voice_conversion/parallel_vc/source_4.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/parallel_vc/target_4.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/parallel_vc/convert_4.wav"></audio></td>
         </tr>
+        <tr height="10px"></tr>
         <tr>
-          <td><audio controls><source src="voice_conversion/demo.wav"></audio></td>
-          <td><audio controls><source src="voice_conversion/demo.wav"></audio></td>
-          <td><audio controls><source src="voice_conversion/demo.wav"></audio></td>
+          <td style="white-space:nowrap" align=center width=300>Speaker 3</td>
+          <td><audio controls><source src="voice_conversion/parallel_vc/source_3.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/parallel_vc/target_3.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/parallel_vc/convert_3.wav"></audio></td>
         </tr>
       </table>
     </blockquote>
-    -->
+    <h3>2、Noparallel VC</h3>
+    <blockquote>
+      <table>
+        <tr>
+          <td align=center width=200></td><td align=center width=200>source audio</td><td align=center width=200>target audio</td><td align=center width=200>converted audio</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300>Speaker 1</td>
+          <td><audio controls><source src="voice_conversion/noparallel_vc/source_1.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/noparallel_vc/target_1.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/noparallel_vc/convert_1.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300>Speaker 2</td>
+          <td><audio controls><source src="voice_conversion/noparallel_vc/source_2.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/noparallel_vc/target_2.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/noparallel_vc/convert_2.wav"></audio></td>
+        </tr>
+        <tr height="10px"></tr>
+        <tr>
+          <td style="white-space:nowrap" align=center width=300>Speaker 3</td>
+          <td><audio controls><source src="voice_conversion/noparallel_vc/source_3.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/noparallel_vc/target_3.wav"></audio></td>
+          <td><audio controls><source src="voice_conversion/noparallel_vc/convert_3.wav"></audio></td>
+        </tr>
+      </table>
+    </blockquote>
   </body>
 </html>
